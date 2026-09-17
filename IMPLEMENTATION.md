@@ -1,0 +1,47 @@
+# SwiftJXL — staged implementation instructions
+
+Read AGENTS.md and every common contract document first. This plan is for a later owner-assigned coding task; the repository foundation itself contains no implementation. Follow the common contract when predecessor conventions differ. Maintain performance, reliability and security together.
+
+## Source and destination
+
+Predecessor: [Raster-Lab/JXLSwift](https://github.com/Raster-Lab/JXLSwift) at inspected SHA `760697a54dd253da8e8466c3fd09ecf2c2d89aec`. Highest stable-shaped tag observed: `v1.4.0` (resolve independently before choosing it as a baseline). Target module/product: `SwiftJXL`. Target CLI: `swiftjxl`. Intended first stable library version: `2.0.0`.
+
+Do not migrate code from moving main without recording the selected revision. Reproduce relevant source tests and inspect source-level capabilities. Existing test totals and benchmark claims are historical, not successor acceptance evidence.
+
+## Milestones and exit evidence
+
+| Milestone | Work | Exit evidence |
+| --- | --- | --- |
+| 1 — contract feasibility | Establish Swift 6.2 package, independent local API/owning-memory types, descriptor validation and safe adapter experiment; no broad codec migration | Compiling equivalent public calls, lifecycle/race/error tests, standalone consumer build and contract issues resolved explicitly |
+| 2 — migration baseline | Inventory predecessor subsystems/products; select and migrate the smallest native scalar lossless path with MIT/provenance reconciliation | Pinned predecessor comparison, independent decode/encode validation, exact sample/precision results, no new runtime codec dependency |
+| 3 — shared-storage path | Direct final decode into caller storage and encode from compatible sealed storage | Required-sharing copy/allocation/lifetime proof; first suite pair or corresponding codec extension passes |
+| 4 — feature/platform coverage | Extend supported modes/layouts, CLI, optional acceleration and all required OS/architecture paths | Capability matrix, codec-specific regressions, platform results, security and performance evidence |
+| 5 — release preparation | Validate clean versioned consumption, docs/examples, migration guide, licence/fixture notices and release gates | Reviewed complete evidence; stable tag only after explicit release task |
+
+Work one owner-assigned milestone at a time. Preserve internal algorithm names where helpful, but provide the agreed common public module surface. Do not publish a stable version or announce complete platform support while required gates are missing.
+
+
+### Migration focus
+
+- The predecessor explicitly removed CompressionFamily and has an independent library target. Preserve that property; replace convention-only API similarity with the common conformance tests.
+- `Sources/JXLSwift/Codec/ImageFrame.swift` stores interleaved `[UInt8]`. Adapt final decode output and encoding input to owner-backed, strided storage. Do not simply convert the new Image to another full byte array under require-sharing.
+- `Sources/JXLSwift/Codec/AsyncOverloads.swift` forwards directly to synchronous operations. Implement documented background execution, bounded cancellation and progress in the real work path, while preserving structured lifetimes.
+- Retain the actual conformant Modular lossless and VarDCT paths. Inventory greyscale/alpha, colour/ICC, extra channels, containers, multi-frame and precision support from source/tests. Do not ship placeholder/private codestream paths as JPEG XL.
+- The predecessor implements signed Int16 through a level shift to unsigned samples and explicit signed-output interpretation. The JPEG XL codestream does not acquire native signed-sample semantics from that flag. Define the supported external interpretation contract or reject a standalone signed-preserving request. Test -32768, -1, 0 and 32767 and any copy/transform cost explicitly.
+- JPEG-to-JXL reconstructible recompression and restoration are specialised operations. Preserve byte-exact reconstruction evidence independently of decoded-pixel losslessness, including progressive/extended/lossless JPEG variants actually supported.
+- The predecessor's Apple-only policy is superseded: add Linux ARM64/x86_64 scalar support by isolating Accelerate/Metal/platform integration. Keep libjxl test-only, never a runtime dependency. Optional native kernels need profiling and a correct scalar Swift reference.
+
+### Codec-specific tests
+
+Test container box sizes/offsets, codestream headers, Modular transforms/predictors/entropy bounds, multi-group boundaries, VarDCT geometries and restoration, alpha/ICC/extra-channel semantics, integer precision and frame compositing where supported. For lossless integer output compare every sample with an independent JPEG XL decoder. For lossy output define colour-domain metrics and tolerances before changes.
+
+Use pinned cjxl/djxl or equivalent independent tools only in oracle jobs. Required interoperability must not pass because a tool is absent. Include independently generated textured/multi-group inputs, not only solid synthetic images. Retain JPEG reconstruction byte-equality fixtures separately. Do not repeat the predecessor's documented lesson of self-round-trip success without independent codestream validity.
+
+### First delivery
+
+Implement the local common surface, portable memory access and unsigned 16-bit Modular lossless shared-buffer path. Join the cross-codec harness after the JPEG 2000 -> JPEG-LS proof. Preserve specialised JPEG reconstruction through an explicit extension rather than forcing it through the uncompressed-image transcode API.
+
+
+## Required handover
+
+Update CHANGELOG.md and migration provenance. Provide the exact commands, commits, fixture hashes and outcomes; report tests not run and why, unsupported cases, allocation/copy evidence and performance impact. Map each advertised feature to a test and capability entry. Keep DICOMKit/Voxelia source changes outside this repository task unless the owner separately assigns them.
