@@ -12,7 +12,7 @@ Do not migrate code from moving main without recording the selected revision. Re
 
 | Milestone | Work | Exit evidence |
 | --- | --- | --- |
-| 1 — contract feasibility | Establish Swift 6.2 package, independent local API/owning-memory types, descriptor validation and safe adapter experiment; no broad codec migration | Compiling equivalent public calls, lifecycle/race/error tests, standalone consumer build and contract issues resolved explicitly |
+| 1 — contract feasibility | Establish Swift 6.2 package, independent local API/owning-memory types, descriptor validation and safe adapter experiment; no codec algorithm migration | Compiling equivalent public calls, lifecycle/race/error tests, standalone consumer build and contract issues resolved explicitly |
 | 2 — migration baseline | Inventory predecessor subsystems/products; select and migrate the smallest native scalar lossless path with MIT/provenance reconciliation | Pinned predecessor comparison, independent decode/encode validation, exact sample/precision results, no new runtime codec dependency |
 | 3 — shared-storage path | Direct final decode into caller storage and encode from compatible sealed storage | Required-sharing copy/allocation/lifetime proof; first suite pair or corresponding codec extension passes |
 | 4 — feature/platform coverage | Extend supported modes/layouts, CLI, optional acceleration and all required OS/architecture paths | Capability matrix, codec-specific regressions, platform results, security and performance evidence |
@@ -37,9 +37,11 @@ Test container box sizes/offsets, codestream headers, Modular transforms/predict
 
 Use pinned cjxl/djxl or equivalent independent tools only in oracle jobs. Required interoperability must not pass because a tool is absent. Include independently generated textured/multi-group inputs, not only solid synthetic images. Retain JPEG reconstruction byte-equality fixtures separately. Do not repeat the predecessor's documented lesson of self-round-trip success without independent codestream validity.
 
-### First delivery
+### Initial codec delivery — Milestones 2–4
 
-Implement the local common surface, portable memory access and unsigned 16-bit Modular lossless shared-buffer path. Join the cross-codec harness after the JPEG 2000 -> JPEG-LS proof. Preserve specialised JPEG reconstruction through an explicit extension rather than forcing it through the uncompressed-image transcode API.
+The following codec work follows Milestone 1 contract feasibility. It is not part of the first coding task. Migrate the scalar path in Milestone 2, prove shared storage in Milestone 3, and extend features/CLI/platform coverage in Milestone 4.
+
+Build on the validated local common surface and portable memory access to implement the unsigned 16-bit Modular lossless shared-buffer path. Join the cross-codec harness after the JPEG 2000 -> JPEG-LS proof. Preserve specialised JPEG reconstruction through an explicit extension rather than forcing it through the uncompressed-image transcode API.
 
 
 ## Required handover
