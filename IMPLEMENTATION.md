@@ -28,7 +28,7 @@ Work one owner-assigned milestone at a time. Preserve internal algorithm names w
 - `Sources/JXLSwift/Codec/AsyncOverloads.swift` forwards directly to synchronous operations. Implement documented background execution, bounded cancellation and progress in the real work path, while preserving structured lifetimes.
 - Retain the actual conformant Modular lossless and VarDCT paths. Inventory greyscale/alpha, colour/ICC, extra channels, containers, multi-frame and precision support from source/tests. Do not ship placeholder/private codestream paths as JPEG XL.
 - The predecessor implements signed Int16 through a level shift to unsigned samples and explicit signed-output interpretation. The JPEG XL codestream does not acquire native signed-sample semantics from that flag. Define the supported external interpretation contract or reject a standalone signed-preserving request. Test -32768, -1, 0 and 32767 and any copy/transform cost explicitly.
-- JPEG-to-JXL reconstructible recompression and restoration are specialised operations. Preserve byte-exact reconstruction evidence independently of decoded-pixel losslessness, including progressive/extended/lossless JPEG variants actually supported.
+- JPEG-to-JXL reconstructible recompression and restoration are specialised operations. Preserve byte-exact reconstruction evidence independently of decoded-pixel losslessness, with separate evidence for each supported DCT JPEG profile. The DCT reconstruction bridge does not imply SOF3 lossless-JPEG or 12/16-bit JPEG bitstream reconstruction; see TRANSCODING.md.
 - The predecessor's Apple-only policy is superseded: add Linux ARM64/x86_64 scalar support by isolating Accelerate/Metal/platform integration. Keep libjxl test-only, never a runtime dependency. Optional native kernels need profiling and a correct scalar Swift reference.
 
 ### Codec-specific tests
@@ -43,6 +43,10 @@ The following codec work follows Milestone 1 contract feasibility. It is not par
 
 Build on the validated local common surface and portable memory access to implement the unsigned 16-bit Modular lossless shared-buffer path. Join the cross-codec harness after the JPEG 2000 -> JPEG-LS proof. Preserve specialised JPEG reconstruction through an explicit extension rather than forcing it through the uncompressed-image transcode API.
 
+
+## Native transcoding work
+
+Implement reversible existing-JPEG ↔ JPEG XL using [TRANSCODING.md](TRANSCODING.md) and the common native format-pair API/CLI. Audit the recorded predecessor limitations in Milestone 2; qualify the in-memory native operation in Milestone 3 and extend profiles in Milestone 4. Preserve the initial J2K → JPEG-LS proof and the Milestone 1 feasibility boundary.
 
 ## Required handover
 
