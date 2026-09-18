@@ -21,6 +21,10 @@ The first coding task is **Milestone 1: API and memory-contract feasibility**, u
 - [Performance gates](Documentation/PERFORMANCE.md), [platforms](Documentation/PLATFORMS.md) and [CLI](Documentation/CLI_CONTRACT.md).
 - [History and source provenance](HISTORY.md), [change log](CHANGELOG.md), [security](SECURITY.md), [contributing](CONTRIBUTING.md) and [MIT licence](LICENSE).
 
+## Native in-memory transcoding
+
+Planned standalone **reversible existing-JPEG ↔ JPEG XL transcoding** restores the original JPEG bytes from the JXL alone, with coefficients and reconstruction metadata held in memory. The predecessor already exposes forward/reverse methods and byte-equality tests; the supported JPEG/metadata profiles still require qualification. This preserves an existing lossy JPEG without recovering pixels lost during its original encoding. See [transcoding instructions and source-review findings](TRANSCODING.md) for the API/CLI pattern, limits and acceptance tests. This remains planned successor functionality.
+
 ## Relationship to the suite
 
 The four independent libraries are SwiftJ2K, SwiftJLS, SwiftJXL and SwiftJLI, all intended to live under Raster-Lab. A future optional umbrella adapts them for codec selection and in-process transcoding. The codecs do not depend on that umbrella. SwiftCompressionFamily is not part of this successor plan. The common contract is mirrored documentation plus behavioural tests, not a shared runtime package.
