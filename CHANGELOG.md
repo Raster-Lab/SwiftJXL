@@ -1,5 +1,12 @@
 # Change log
 
+## 2.1.0-dev.1 — Swift 6.4 upgrade, 2026-09-19 (unreleased)
+
+- Require Swift tools/compiler 6.4, retaining Swift 6 language mode and OS 26 deployment floors.
+- Advance the coordinated common contract to 0.3.0 and the earlier unreleased 2.0.0 version target to 2.1.0.
+- Adopt checked native-order span access for UInt16 samples with explicit endian conversion; preserve public API and owning-storage semantics.
+- Add the supplied upgrade references, F01–F13 feature register, headless Swift Build validation and exact evidence. No codec capability, stable release or tag is added.
+
 ## Unreleased — application migration documentation, 2026-09-18
 
 - Added [MIGRATION.md](MIGRATION.md) for humans and coding agents preparing JXLSwift applications: pinned API/product mappings, dependency and platform changes, a standalone preparation example, precision/ownership policies and rollout/rollback gates.
