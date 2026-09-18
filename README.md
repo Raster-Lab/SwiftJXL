@@ -12,6 +12,8 @@ Swift 6.2 minimum, Swift 6 language mode and complete concurrency checking. Appl
 
 ## Start reading
 
+Moving an application from JXLSwift? Read the [application migration guide](MIGRATION.md) for dependency/API mappings, ownership changes, a compilable preparation example and staged rollout checks. Real codec replacement remains blocked by the deferred encoding, decoding and reconstruction implementations.
+
 The first coding task is **Milestone 1: API and memory-contract feasibility**, using synthetic buffers. Its implementation and local test evidence are recorded in [Milestone 1 validation](Documentation/MILESTONE1.md). Codec migration and the first real shared-storage transcode follow in Milestones 2 and 3. Use the staged instructions in [AGENTS.md](AGENTS.md).
 
 - [Coding-agent entry point](AGENTS.md) and [codec-specific implementation plan](IMPLEMENTATION.md).

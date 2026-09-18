@@ -1,9 +1,13 @@
 # Change log
 
-- Final Milestone 1 review: prevent image publication when cancellation occurs inside provider sealing/validation; deterministic regressions and full checks pass.
+## Unreleased — application migration documentation, 2026-09-18
+
+- Added [MIGRATION.md](MIGRATION.md) for humans and coding agents preparing JXLSwift applications: pinned API/product mappings, dependency and platform changes, a standalone preparation example, precision/ownership policies and rollout/rollback gates.
+- Linked the guide from README, agent, contributor, implementation and transcoding entry points. Clarified Milestone 1 availability and separated future pixel-lossless encoding from original-JPEG-byte reconstruction. No codec implementation or release is added.
 
 ## Unreleased — Milestone 1 feasibility, 2026-09-18
 
+- Final Milestone 1 review: prevent image publication when cancellation occurs inside provider sealing/validation; deterministic regressions and full checks pass.
 - Added a standalone Swift 6.2-minimum package in Swift 6 language mode, local common API, checked descriptors, resource policies and owning storage with exclusive leases and immutable publication.
 - Added native transcoder call shapes with empty capabilities and explicit unsupported errors. No codec algorithm, private codestream, real transcoder or CLI is implemented.
 - Added 24 descriptor, ownership, concurrency, cancellation, resource and API tests plus an independent public consumer. Debug/release, AddressSanitizer and ThreadSanitizer checks passed locally with Xcode 27's Swift 6.4 toolchain; see [exact commands and limitations](Documentation/MILESTONE1.md).
