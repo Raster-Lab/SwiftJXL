@@ -1,5 +1,14 @@
 # Change log
 
+- Final Milestone 1 review: prevent image publication when cancellation occurs inside provider sealing/validation; deterministic regressions and full checks pass.
+
+## Unreleased — Milestone 1 feasibility, 2026-09-18
+
+- Added a standalone Swift 6.2-minimum package in Swift 6 language mode, local common API, checked descriptors, resource policies and owning storage with exclusive leases and immutable publication.
+- Added native transcoder call shapes with empty capabilities and explicit unsupported errors. No codec algorithm, private codestream, real transcoder or CLI is implemented.
+- Added 24 descriptor, ownership, concurrency, cancellation, resource and API tests plus an independent public consumer. Debug/release, AddressSanitizer and ThreadSanitizer checks passed locally with Xcode 27's Swift 6.4 toolchain; see [exact commands and limitations](Documentation/MILESTONE1.md).
+- Added the coordinated ownership-contract refinement and retained predecessor provenance without copying codec code. Swift 6.2, Linux, other Apple runtime targets and codec interoperability remain unexecuted qualification gates.
+
 ## Unreleased — documentation foundation, 2026-09-17
 
 - Defined the standalone SwiftJXL successor and intended first stable version 2.0.0.

@@ -2,7 +2,7 @@
 
 JPEG XL for the **Swift Image Compression Suite**.
 
-**Status: documentation foundation. No implementation has been migrated, created, built or validated in this successor.** The intended first stable library version is **2.0.0**; it is not a published release. No Package.swift or installable package is present yet.
+**Status: Milestone 1 API and owning-storage implementation, tested locally with Xcode's Swift toolchain.** A dependency-free Swift package now validates descriptors and storage lifetimes using synthetic samples. JPEG XL encoding, decoding, inspection and native JPEG reconstruction remain unimplemented and explicitly report `unsupportedFeature`; codec capabilities are empty. The intended first stable library version is **2.0.0**; it is not a published release.
 
 SwiftJXL is the standalone successor to [JXLSwift](https://github.com/Raster-Lab/JXLSwift). The successor is intended to provide a harmonised API, explicit memory ownership, high-precision sample preservation and efficient shared-storage integration. It has no mandatory dependency on another suite library or CompressionFamily. MIT licensing applies to these documents and subsequent authorised in-house implementation; third-party material retains its own terms.
 
@@ -12,7 +12,7 @@ Swift 6.2 minimum, Swift 6 language mode and complete concurrency checking. Appl
 
 ## Start reading
 
-The first coding task is **Milestone 1: API and memory-contract feasibility**, using synthetic buffers. Codec migration and the first real shared-storage transcode follow in Milestones 2 and 3. Use the ready-to-use task prompt in [AGENTS.md](AGENTS.md).
+The first coding task is **Milestone 1: API and memory-contract feasibility**, using synthetic buffers. Its implementation and local test evidence are recorded in [Milestone 1 validation](Documentation/MILESTONE1.md). Codec migration and the first real shared-storage transcode follow in Milestones 2 and 3. Use the staged instructions in [AGENTS.md](AGENTS.md).
 
 - [Coding-agent entry point](AGENTS.md) and [codec-specific implementation plan](IMPLEMENTATION.md).
 - [Suite policy](Documentation/SUITE_POLICY.md) and [common API](Documentation/COMMON_API.md).
@@ -29,4 +29,4 @@ Planned standalone **reversible existing-JPEG ↔ JPEG XL transcoding** restores
 
 The four independent libraries are SwiftJ2K, SwiftJLS, SwiftJXL and SwiftJLI, all intended to live under Raster-Lab. A future optional umbrella adapts them for codec selection and in-process transcoding. The codecs do not depend on that umbrella. SwiftCompressionFamily is not part of this successor plan. The common contract is mirrored documentation plus behavioural tests, not a shared runtime package.
 
-The planned main module is `SwiftJXL` and the planned CLI is `swiftjxl`. Actual API usage examples will be published only after they compile and run. Features from the predecessor are migration candidates whose exact coverage must be verified; see IMPLEMENTATION.md. Nothing here changes the predecessor repository's current maintenance configuration.
+The package exports `SwiftJXL`; the planned CLI `swiftjxl` is deferred. A [standalone public consumer](Examples/ContractConsumer/Sources/ContractConsumer/Consumer.swift) has been compiled and run. It creates a padded 12-in-16 greyscale image, checks known samples and verifies explicit codec unavailability. Run `bash Scripts/validate.sh` for the local contract checks. Features from the predecessor are migration candidates whose exact coverage must be verified; see IMPLEMENTATION.md. Nothing here changes the predecessor repository's current maintenance configuration.
