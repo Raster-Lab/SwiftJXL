@@ -1,0 +1,27 @@
+{
+  "repository": "SwiftJXL",
+  "url": "https://github.com/Raster-Lab/SwiftJXL.git",
+  "revision": "00cac8f4e8b1aa6864c38a9ed6b8f79c20fe6366",
+  "argv": [
+    "xcrun",
+    "swift",
+    "run",
+    "--disable-sandbox",
+    "--build-system",
+    "swiftbuild",
+    "--jobs",
+    "2",
+    "--cache-path",
+    "/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/url-consumers/SwiftJXL/cache",
+    "--config-path",
+    "/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/url-consumers/SwiftJXL/config",
+    "--security-path",
+    "/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/url-consumers/SwiftJXL/security",
+    "MigrationExample"
+  ],
+  "cwd": "/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/url-consumers/SwiftJXL",
+  "developer_dir": "/Applications/Xcode.app/Contents/Developer",
+  "exit_code": 1,
+  "example_sha256": "99f597fc48ff19d598fe3c13f60d6acd45baac8edba3da6c081a1af64afc8c8f",
+  "manifest_sha256": "2fc923acfa849e05830f4c1837de1045f63194d4e41f2a3fd67baf5c0dfa4a16"
+}
