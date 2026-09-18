@@ -1,0 +1,23 @@
+// swift-tools-version: 6.2
+import PackageDescription
+
+let package = Package(
+    name: "SwiftJXL",
+    platforms: [
+        .macOS("26.0"),
+        .iOS("26.0"),
+        .tvOS("26.0"),
+        .visionOS("26.0"),
+        .watchOS("26.0")
+    ],
+    products: [
+        .library(name: "SwiftJXL", targets: ["SwiftJXL"])
+    ],
+    targets: [
+        .target(name: "SwiftJXL"),
+        .testTarget(name: "SwiftJXLTests", dependencies: ["SwiftJXL"])
+    ],
+    // Swift 6 language mode includes complete concurrency checking. No unsafe
+    // manifest flags or sibling package dependencies are required by consumers.
+    swiftLanguageModes: [.v6]
+)
