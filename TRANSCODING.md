@@ -1,6 +1,6 @@
 # SwiftJXL — reversible JPEG ↔ JPEG XL transcoding
 
-Contract **0.2.0**. Implementation instructions and source review, 18 September 2026. The successor remains documentation only. Read AGENTS.md, IMPLEMENTATION.md and the common contracts first.
+Native-transcoding requirements introduced in contract **0.2.0**; the current common contract is **0.2.1**. Implementation instructions and source review, 18 September 2026. Milestone 1 supplies an unsupported transcoder call shape with empty capabilities; real recompression and reconstruction remain deferred. Read AGENTS.md, IMPLEMENTATION.md and the common contracts first. For application API/dependency changes and rollout gates, see [MIGRATION.md](MIGRATION.md).
 
 ## Required outcome and exact meaning
 

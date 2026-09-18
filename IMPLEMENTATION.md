@@ -1,6 +1,6 @@
 # SwiftJXL — staged implementation instructions
 
-Read AGENTS.md and every common contract document first. This plan is for a later owner-assigned coding task; the repository foundation itself contains no implementation. Follow the common contract when predecessor conventions differ. Maintain performance, reliability and security together.
+Read AGENTS.md and every common contract document first. Milestone 1 now implements API/storage feasibility; later codec milestones require an owner-assigned task. Follow the common contract when predecessor conventions differ. Maintain performance, reliability and security together. [MIGRATION.md](MIGRATION.md) covers downstream application adoption; update its mappings and availability statements as milestones land.
 
 ## Source and destination
 

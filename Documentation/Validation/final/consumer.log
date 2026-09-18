@@ -1,0 +1,19 @@
+Building for debugging...
+[0/7] Write sources
+[2/7] Write ContractConsumer-entitlement.plist
+[3/7] Write swift-version--58304C5D6DBC2206.txt
+[5/12] Emitting module SwiftJXL
+[6/12] Compiling SwiftJXL CodecAPI.swift
+[7/12] Compiling SwiftJXL Errors.swift
+[8/12] Compiling SwiftJXL Image.swift
+[9/12] Compiling SwiftJXL ImageDescriptor.swift
+[10/15] Compiling SwiftJXL ImageStorage.swift
+[11/15] Compiling SwiftJXL Options.swift
+[12/15] Compiling SwiftJXL Transcoding.swift
+[13/17] Compiling ContractConsumer Consumer.swift
+[14/17] Emitting module ContractConsumer
+[14/17] Write Objects.LinkFileList
+[15/17] Linking ContractConsumer
+[16/17] Applying ContractConsumer
+Build of product 'ContractConsumer' complete! (4.11s)
+Public consumer passed: owning UInt16 samples and explicit codec unavailability.

@@ -1,0 +1,20 @@
+warning: /Users/suresh/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/suresh/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/suresh/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'contractconsumer': failed storing manifest for 'contractconsumer' in cache: attempt to write a readonly database
+warning: 'swiftjxl': failed storing manifest for 'swiftjxl' in cache: attempt to write a readonly database
+[0/1] Planning build
+Building for debugging...
+[0/3] Write swift-version--58304C5D6DBC2206.txt
+[1/4] Write sources
+[3/7] Compiling SwiftJXL ImageDescriptor.swift
+[4/7] Compiling SwiftJXL Image.swift
+[5/7] Emitting module SwiftJXL
+[6/8] Compiling SwiftJXL CodecAPI.swift
+[7/10] Emitting module ContractConsumer
+[8/10] Compiling ContractConsumer Consumer.swift
+[8/11] Write Objects.LinkFileList
+[9/11] Linking ContractConsumer
+[10/11] Applying ContractConsumer
+Build of product 'ContractConsumer' complete! (1.08s)
+Public consumer passed: owning UInt16 samples and explicit codec unavailability.
