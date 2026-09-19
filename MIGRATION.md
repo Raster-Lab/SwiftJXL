@@ -124,3 +124,7 @@ The [pinned predecessor methods, tests and limitations](TRANSCODING.md) identify
 6. Measure copied bytes, peak memory, cancellation, concurrent ownership and latency in the application. Test rollback before switching production routing. Remove the old dependency only when every required feature, deployment target and retained asset passes; retain a reviewed earlier revision for rollback.
 
 Coding agents must read [AGENTS.md](AGENTS.md), inspect actual application usage and report each required feature as implemented/tested, deferred or unsupported. This guide authorises no codec implementation or edits to downstream applications by itself. Do not delete unmapped features, weaken fidelity tests, fabricate release tags or claim complete migration from a successful build. Update this guide, the README and change log whenever a later milestone changes these mappings.
+
+## Apple runtime qualification update
+
+See [Apple platform runtime qualification](Documentation/Engineering/ApplePlatforms/README.md) for executed OS 27 simulator, macOS and Mac Catalyst tests and the reproducible headless runner. This qualifies the current API/storage foundation; the existing codec migration and production-cutover gates remain in force.

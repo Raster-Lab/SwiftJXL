@@ -1,0 +1,111 @@
+{
+  "errors" : [
+
+  ],
+  "values" : [
+    {
+      "disabledTests" : [
+
+      ],
+      "enabledTests" : [
+        {
+          "identifier" : "SwiftJXLTests/APITests/admissionBoundariesAndMetadataAreChecked()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/APITests/allCodecCallShapesRejectWithoutTouchingDestination()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/APITests/cancellationRetainsItsStandardErrorAndInvalidatesPartialWrite()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/APITests/capabilitiesDoNotAdvertiseSyntheticSamplesAsJPEGXL()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/APITests/metadataSharesTheCallerAdmissionBudgetWithPixels()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/APITests/rejectsInputLimitRequiredBackendAndDestructiveMetadataPolicy()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/APITests/reportUnknownMeasurementsRemainUnknown()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/APITests/safeWriterRejectsOutOfRangeSamplesAndInvalidatesDestination()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/APITests/validatesConfigurationAndFiniteResourceLimits()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/DescriptorTests/deterministicLayoutMutation()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/DescriptorTests/finalRowNeedsOnlyItsActualSampleBytes()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/DescriptorTests/paddedOddDimensionsAndPrecision()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/DescriptorTests/rejectsArithmeticOverflowBeforeAllocation()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/DescriptorTests/rejectsInvalidGeometryAndPrecision()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/DescriptorTests/rejectsMisalignedOffsetsAndStrides()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/DescriptorTests/rejectsOverlappingPlanesAndIncompleteMapping()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/DescriptorTests/semanticMetadataMustAgreeWithComponents()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/StorageTests/abortMakesStorageUnreadableAndUnwritable()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/StorageTests/concurrentReadersPreserveEveryLogicalSample()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/StorageTests/copiedLeaseCannotOverlapWriters()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/StorageTests/freshAllocationsHaveDistinctIdentitiesAndZeroPadding()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/StorageTests/imageRetainsAdapterAndAllocationUntilLastReader()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/StorageTests/leaseCannotBeForgedReusedOrBorrowedReentrantly()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/StorageTests/rejectsOwnerCapacityShorterThanDescriptor()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/Swift64SampleAccessTests/initialisesExternalSampleBytesAtOddAddressWithoutChangingPadding()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/Swift64SampleAccessTests/outOfPrecisionWriteInvalidatesDestination()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/Swift64SampleAccessTests/readsIndependentGoldenBytesFromOddPhysicalAddress()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/Swift64SampleAccessTests/refusesShortProviderBeforeLoadingSample()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/Swift64SampleAccessTests/rejectsCoordinatesBeforeOffsetArithmetic()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/Swift64SampleAccessTests/writesGoldenBytesForPackedAndPadded12And16BitSamples()"
+        },
+        {
+          "identifier" : "SwiftJXLTests/cancellationInProviderFinalisationPreventsPublication(_:)"
+        },
+        {
+          "identifier" : "SwiftJXLTests/platformDefaultsEnforceWatchAdmissionBeforeAllocation()"
+        }
+      ],
+      "testPlan" : "SwiftJXL-Package"
+    }
+  ]
+}

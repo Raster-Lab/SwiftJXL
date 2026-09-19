@@ -1,0 +1,78 @@
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite "Descriptor validation" started.
+􀟈  Suite "Swift 6.4 sample access" started.
+􀟈  Suite "Public API feasibility" started.
+􀟈  Suite "Owning storage" started.
+􀟈  Test platformDefaultsEnforceWatchAdmissionBeforeAllocation() started.
+􀟈  Test cancellationInProviderFinalisationPreventsPublication(_:) started.
+􀟈  Test rejectsOverlappingPlanesAndIncompleteMapping() started.
+􀟈  Test finalRowNeedsOnlyItsActualSampleBytes() started.
+􀟈  Test semanticMetadataMustAgreeWithComponents() started.
+􀟈  Test paddedOddDimensionsAndPrecision() started.
+􀟈  Test deterministicLayoutMutation() started.
+􀟈  Test rejectsMisalignedOffsetsAndStrides() started.
+􀟈  Test rejectsInvalidGeometryAndPrecision() started.
+􀟈  Test initialisesExternalSampleBytesAtOddAddressWithoutChangingPadding() started.
+􀟈  Test rejectsArithmeticOverflowBeforeAllocation() started.
+􀟈  Test readsIndependentGoldenBytesFromOddPhysicalAddress() started.
+􀟈  Test rejectsCoordinatesBeforeOffsetArithmetic() started.
+􀟈  Test writesGoldenBytesForPackedAndPadded12And16BitSamples() started.
+􀟈  Test outOfPrecisionWriteInvalidatesDestination() started.
+􀟈  Test refusesShortProviderBeforeLoadingSample() started.
+􀟈  Test metadataSharesTheCallerAdmissionBudgetWithPixels() started.
+􀟈  Test admissionBoundariesAndMetadataAreChecked() started.
+􀟈  Test allCodecCallShapesRejectWithoutTouchingDestination() started.
+􀟈  Test validatesConfigurationAndFiniteResourceLimits() started.
+􀟈  Test cancellationRetainsItsStandardErrorAndInvalidatesPartialWrite() started.
+􀟈  Test reportUnknownMeasurementsRemainUnknown() started.
+􀟈  Test capabilitiesDoNotAdvertiseSyntheticSamplesAsJPEGXL() started.
+􀟈  Test rejectsInputLimitRequiredBackendAndDestructiveMetadataPolicy() started.
+􀟈  Test leaseCannotBeForgedReusedOrBorrowedReentrantly() started.
+􀟈  Test imageRetainsAdapterAndAllocationUntilLastReader() started.
+􀟈  Test concurrentReadersPreserveEveryLogicalSample() started.
+􀟈  Test copiedLeaseCannotOverlapWriters() started.
+􀟈  Test rejectsOwnerCapacityShorterThanDescriptor() started.
+􀟈  Test abortMakesStorageUnreadableAndUnwritable() started.
+􀟈  Test case passing 1 argument point → .sealing to cancellationInProviderFinalisationPreventsPublication(_:) started.
+􀟈  Test case passing 1 argument point → .validatingSealedStorage to cancellationInProviderFinalisationPreventsPublication(_:) started.
+􀟈  Test freshAllocationsHaveDistinctIdentitiesAndZeroPadding() started.
+􁁛  Test rejectsOverlappingPlanesAndIncompleteMapping() passed after 0.040 seconds.
+􁁛  Test finalRowNeedsOnlyItsActualSampleBytes() passed after 0.040 seconds.
+􁁛  Test paddedOddDimensionsAndPrecision() passed after 0.041 seconds.
+􁁛  Test rejectsMisalignedOffsetsAndStrides() passed after 0.041 seconds.
+􁁛  Test rejectsInvalidGeometryAndPrecision() passed after 0.041 seconds.
+􁁛  Test initialisesExternalSampleBytesAtOddAddressWithoutChangingPadding() passed after 0.041 seconds.
+􁁛  Test readsIndependentGoldenBytesFromOddPhysicalAddress() passed after 0.041 seconds.
+􁁛  Test rejectsCoordinatesBeforeOffsetArithmetic() passed after 0.041 seconds.
+􁁛  Test writesGoldenBytesForPackedAndPadded12And16BitSamples() passed after 0.041 seconds.
+􁁛  Test outOfPrecisionWriteInvalidatesDestination() passed after 0.041 seconds.
+􁁛  Test refusesShortProviderBeforeLoadingSample() passed after 0.041 seconds.
+􁁛  Test metadataSharesTheCallerAdmissionBudgetWithPixels() passed after 0.041 seconds.
+􁁛  Test admissionBoundariesAndMetadataAreChecked() passed after 0.040 seconds.
+􁁛  Test allCodecCallShapesRejectWithoutTouchingDestination() passed after 0.040 seconds.
+􁁛  Test validatesConfigurationAndFiniteResourceLimits() passed after 0.040 seconds.
+􁁛  Test rejectsArithmeticOverflowBeforeAllocation() passed after 0.041 seconds.
+􁁛  Test reportUnknownMeasurementsRemainUnknown() passed after 0.024 seconds.
+􁁛  Test capabilitiesDoNotAdvertiseSyntheticSamplesAsJPEGXL() passed after 0.024 seconds.
+􁁛  Test rejectsInputLimitRequiredBackendAndDestructiveMetadataPolicy() passed after 0.024 seconds.
+􁁛  Test leaseCannotBeForgedReusedOrBorrowedReentrantly() passed after 0.024 seconds.
+􁁛  Test imageRetainsAdapterAndAllocationUntilLastReader() passed after 0.024 seconds.
+􀟈  Test safeWriterRejectsOutOfRangeSamplesAndInvalidatesDestination() started.
+􁁛  Test rejectsOwnerCapacityShorterThanDescriptor() passed after 0.026 seconds.
+􁁛  Test abortMakesStorageUnreadableAndUnwritable() passed after 0.026 seconds.
+􁁛  Test platformDefaultsEnforceWatchAdmissionBeforeAllocation() passed after 0.045 seconds.
+􁁛  Test deterministicLayoutMutation() passed after 0.045 seconds.
+􁁛  Suite "Swift 6.4 sample access" passed after 0.045 seconds.
+􁁛  Test safeWriterRejectsOutOfRangeSamplesAndInvalidatesDestination() passed after 0.002 seconds.
+􁁛  Test copiedLeaseCannotOverlapWriters() passed after 0.027 seconds.
+􁁛  Test concurrentReadersPreserveEveryLogicalSample() passed after 0.027 seconds.
+􁁛  Test cancellationRetainsItsStandardErrorAndInvalidatesPartialWrite() passed after 0.028 seconds.
+􁁛  Suite "Public API feasibility" passed after 0.045 seconds.
+􁁛  Test semanticMetadataMustAgreeWithComponents() passed after 0.041 seconds.
+􁁛  Suite "Descriptor validation" passed after 0.046 seconds.
+􁁛  Test freshAllocationsHaveDistinctIdentitiesAndZeroPadding() passed after 0.010 seconds.
+􁁛  Suite "Owning storage" passed after 0.048 seconds.
+􁁛  Test cancellationInProviderFinalisationPreventsPublication(_:) with 2 test cases passed after 0.048 seconds.
+􁁛  Test run with 32 tests in 4 suites passed after 0.049 seconds.
