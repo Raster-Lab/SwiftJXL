@@ -1,0 +1,15 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -scheme SwiftJXL -destination platform=macOS,arch=arm64 -jobs 2 CODE_SIGNING_ALLOWED=NO -derivedDataPath /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/os27/xcode/SwiftJXL/DerivedData -resultBundlePath /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/os27/xcode/SwiftJXL/Tests.xcresult -parallel-testing-enabled NO
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+2026-09-19 15:04:13.781 xcodebuild[35204:3488895] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+
+
+Resolved source packages:
+  SwiftJXL: /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+
+xcodebuild: error: Scheme SwiftJXL is not currently configured for the test action.
+

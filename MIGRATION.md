@@ -1,8 +1,8 @@
 # Migrating applications from JXLSwift to SwiftJXL
 
-The successor now requires Swift 6.4 and retains its OS 26 deployment floors. See the [Swift 6.4 upgrade record](Documentation/Engineering/Swift64/README.md) for development versioning and validation; current codec availability is unchanged.
+The successor now requires Swift 6.4 and retains its OS 27 deployment floors. See the [Swift 6.4 upgrade record](Documentation/Engineering/Swift64/README.md) for development versioning and validation; current codec availability is unchanged.
 
-For application maintainers and coding agents. This guide describes the **Milestone 1 implementation and contract 0.3.0**, not a released codec. The intended first stable version, `2.1.0`, is not an available release requirement.
+For application maintainers and coding agents. This guide describes the **Milestone 1 implementation and contract 0.4.0**, not a released codec. The intended first stable version, `2.1.0`, is not an available release requirement.
 
 **Keep JXLSwift in production for compression, decompression and JPEG reconstruction.** SwiftJXL currently provides validated descriptors, owning storage and public call shapes. Its encode, decode, inspect and native transcode operations report `unsupportedFeature` after applicable validation; capabilities advertise no supported codec operation. An application can prepare adapters now, but cannot complete a functional codec replacement until later milestones qualify its required features. See [implemented evidence](Documentation/MILESTONE1.md) and [remaining milestones](IMPLEMENTATION.md).
 
@@ -17,12 +17,12 @@ This mapping was checked against [JXLSwift at `760697a54dd253da8e8466c3fd09ecf2c
 | Import | `import JXLSwift` | `import SwiftJXL` in the new adapter |
 | SwiftPM target dependency | `.product(name: "JXLSwift", package: "JXLSwift")` | `.product(name: "SwiftJXL", package: "SwiftJXL")` |
 | Compiler | Swift 6.2 manifest | Swift 6.4 minimum, Swift 6 language mode and complete concurrency checking |
-| Apple deployment targets | macOS 13, iOS/tvOS 16, watchOS 9, visionOS 1 | All listed Apple OS minima are 26.0 |
-| Executables | `jxl-tool`, `jxl` | `swiftjxl` is planned; no executable is exported today |
+| Apple deployment targets | macOS 13, iOS/tvOS 16, watchOS 9, visionOS 1 | All listed Apple OS minima are 27.0 |
+| Executables | `jxl-tool`, `jxl` | `swiftjxl` provides help/version/capabilities only |
 
 Use a local checkout during preparation: add `.package(path: "../SwiftJXL")` to your development manifest and the successor product to the adapter target. Adjust the path for your checkout. For reproducible remote evaluation, use the successor URL with `revision:` set to an actual reviewed full commit SHA; record it and the lockfile. Do not write `from: "2.1.0"` before that release exists. In Xcode, add the local package and link its `SwiftJXL` product to the evaluation target; update deployment settings deliberately.
 
-The [current manifest](Package.swift) exports only the dependency-free `SwiftJXL` library. The [predecessor manifest](https://github.com/Raster-Lab/JXLSwift/blob/760697a54dd253da8e8466c3fd09ecf2c2d89aec/Package.swift) also declares the two CLI products and a `JXLPerfC` development target; none has a successor replacement today. Keep scripts on the earlier tools until a qualified CLI exists. CompressionFamily, a sibling codec and an umbrella package are not successor prerequisites. Linux is an intended qualification target; see [platform requirements and evidence limits](Documentation/PLATFORMS.md).
+The [current manifest](Package.swift) exports the dependency-free `SwiftJXL` library and diagnostic `swiftjxl` executable. The [predecessor manifest](https://github.com/Raster-Lab/JXLSwift/blob/760697a54dd253da8e8466c3fd09ecf2c2d89aec/Package.swift) also declares the two CLI products and a `JXLPerfC` development target; their codec/performance commands have no successor replacement today. Keep payload-processing scripts on the earlier tools; see [current diagnostic CLI support](CLI.md). CompressionFamily, a sibling codec and an umbrella package are not successor prerequisites. Linux is an intended qualification target; see [platform requirements and evidence limits](Documentation/PLATFORMS.md).
 
 ## API mapping: available surface versus deferred behaviour
 

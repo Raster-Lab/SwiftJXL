@@ -5,12 +5,14 @@ import PackageDescription
 let package = Package(
     name: "SwiftJXL",
     platforms: [
-        .macOS("26.0"), .iOS("26.0"), .tvOS("26.0"),
-        .visionOS("26.0"), .watchOS("26.0")
+        .macOS("27.0"), .iOS("27.0"), .tvOS("27.0"),
+        .visionOS("27.0"), .watchOS("27.0")
     ],
-    products: [.library(name: "SwiftJXL", targets: ["SwiftJXL"])],
+    products: [.library(name: "SwiftJXL", targets: ["SwiftJXL"]),
+               .executable(name: "swiftjxl", targets: ["SwiftJXLCLI"])],
     targets: [
         .target(name: "SwiftJXL"),
+        .executableTarget(name: "SwiftJXLCLI", dependencies: ["SwiftJXL"]),
         .testTarget(name: "SwiftJXLTests", dependencies: ["SwiftJXL"])
     ],
     swiftLanguageModes: [.v6]
