@@ -1,0 +1,44 @@
+{
+  "repository": "SwiftJXL",
+  "revision": "6ff68a6ee4c9051f19f405ced7a683eb228deff1",
+  "argv": [
+    "xcrun",
+    "swift",
+    "run",
+    "--build-system",
+    "swiftbuild",
+    "--jobs",
+    "2",
+    "--package-path",
+    "<workspace>/work/apple-platform-qualification/remote-consumers/RemoteConsumer-SwiftJXL",
+    "--scratch-path",
+    "<workspace>/work/apple-platform-qualification/remote-consumers/RemoteConsumer-SwiftJXL/build",
+    "--cache-path",
+    "<workspace>/work/apple-platform-qualification/remote-consumers/RemoteConsumer-SwiftJXL/cache",
+    "--config-path",
+    "<workspace>/work/apple-platform-qualification/remote-consumers/RemoteConsumer-SwiftJXL/config",
+    "--security-path",
+    "<workspace>/work/apple-platform-qualification/remote-consumers/RemoteConsumer-SwiftJXL/security",
+    "Consumer"
+  ],
+  "cwd": "<workspace>/work/apple-platform-qualification/remote-consumers/RemoteConsumer-SwiftJXL",
+  "environment": {
+    "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+  },
+  "exit_code": 0,
+  "resolved_dependencies": [
+    {
+      "identity": "swiftjxl",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/Raster-Lab/SwiftJXL.git",
+      "state": {
+        "revision": "6ff68a6ee4c9051f19f405ced7a683eb228deff1"
+      }
+    }
+  ],
+  "tested_input_hashes_match": true,
+  "consumer_sha256": {
+    "Package.swift": "57283e11e367ec7c491e0f446d87077514d98f36b10c0b0b725dddbf5e0285b0",
+    "Sources/Consumer/main.swift": "fe6981376102bf15c6bdf2abd20fd09e7b1f637f343f65cfa633f3e77e566ab4"
+  }
+}
