@@ -1,0 +1,37 @@
+Building for debugging...
+[Planning deferred tasks]
+[15 / 26] SwiftJXLTests-product
+[16 / 34]
+[20 / 34] SwiftJXLTests-product
+[21 / 34] SwiftJXLTests-product
+[25 / 34] SwiftJXLTests-product
+[27 / 34] SwiftJXLTests-product
+[28 / 34] AllIncludingTests
+[30 / 34] SwiftJXLTests-product
+[34 / 34] SwiftJXLTests-product
+Build complete! (2.47 secs)
+SwiftJXLTests.APITests/admissionBoundariesAndMetadataAreChecked()
+SwiftJXLTests.APITests/allCodecCallShapesRejectWithoutTouchingDestination()
+SwiftJXLTests.APITests/cancellationRetainsItsStandardErrorAndInvalidatesPartialWrite()
+SwiftJXLTests.APITests/capabilitiesDoNotAdvertiseSyntheticSamplesAsJPEGXL()
+SwiftJXLTests.APITests/metadataSharesTheCallerAdmissionBudgetWithPixels()
+SwiftJXLTests.APITests/rejectsInputLimitRequiredBackendAndDestructiveMetadataPolicy()
+SwiftJXLTests.APITests/reportUnknownMeasurementsRemainUnknown()
+SwiftJXLTests.APITests/safeWriterRejectsOutOfRangeSamplesAndInvalidatesDestination()
+SwiftJXLTests.APITests/validatesConfigurationAndFiniteResourceLimits()
+SwiftJXLTests.DescriptorTests/deterministicLayoutMutation()
+SwiftJXLTests.DescriptorTests/finalRowNeedsOnlyItsActualSampleBytes()
+SwiftJXLTests.DescriptorTests/paddedOddDimensionsAndPrecision()
+SwiftJXLTests.DescriptorTests/rejectsArithmeticOverflowBeforeAllocation()
+SwiftJXLTests.DescriptorTests/rejectsInvalidGeometryAndPrecision()
+SwiftJXLTests.DescriptorTests/rejectsMisalignedOffsetsAndStrides()
+SwiftJXLTests.DescriptorTests/rejectsOverlappingPlanesAndIncompleteMapping()
+SwiftJXLTests.DescriptorTests/semanticMetadataMustAgreeWithComponents()
+SwiftJXLTests.StorageTests/abortMakesStorageUnreadableAndUnwritable()
+SwiftJXLTests.StorageTests/concurrentReadersPreserveEveryLogicalSample()
+SwiftJXLTests.StorageTests/copiedLeaseCannotOverlapWriters()
+SwiftJXLTests.StorageTests/freshAllocationsHaveDistinctIdentitiesAndZeroPadding()
+SwiftJXLTests.StorageTests/imageRetainsAdapterAndAllocationUntilLastReader()
+SwiftJXLTests.StorageTests/leaseCannotBeForgedReusedOrBorrowedReentrantly()
+SwiftJXLTests.StorageTests/rejectsOwnerCapacityShorterThanDescriptor()
+SwiftJXLTests.cancellationInProviderFinalisationPreventsPublication(_:)

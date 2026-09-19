@@ -1,0 +1,565 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -scheme SwiftJXL -destination platform=macOS,arch=arm64 -derivedDataPath /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData -resultBundlePath /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/Tests.xcresult -parallel-testing-enabled NO -jobs 2 CODE_SIGNING_ALLOWED=NO
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+2026-09-19 03:46:36.202 xcodebuild[13498:2775317] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+
+
+Resolved source packages:
+  SwiftJXL: /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+
+Writing result bundle at path:
+	/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/Tests.xcresult
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:macOS, arch:arm64, id:REDACTED-HARDWARE-ID, name:My Mac }
+{ platform:macOS, arch:arm64, variant:Mac Catalyst, id:REDACTED-HARDWARE-ID, name:My Mac }
+{ platform:macOS, arch:arm64, variant:DriverKit, id:REDACTED-HARDWARE-ID, name:My Mac }
+{ platform:macOS, arch:arm64, variant:Designed for [iPad,iPhone], id:REDACTED-HARDWARE-ID, name:My Mac }
+Build Preparation
+Build task concurrency set to 2 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (3 targets)
+    Target 'SwiftJXL-product' in project 'SwiftJXL'
+        ➜ Explicit dependency on target 'SwiftJXL' in project 'SwiftJXL'
+    Target 'SwiftJXLTests-product' in project 'SwiftJXL'
+        ➜ Explicit dependency on target 'SwiftJXL' in project 'SwiftJXL'
+    Target 'SwiftJXL' in project 'SwiftJXL' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: ef663e4bb354487990269e6eef46b8f5
+Build description path: /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/XCBuildData/ef663e4bb354487990269e6eef46b8f5.xcbuilddata
+CreateBuildDirectory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-create-build-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-create-build-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex
+
+CreateBuildDirectory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/CompilationCache.noindex
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-create-build-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/CompilationCache.noindex
+
+CreateBuildDirectory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-create-build-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products
+
+CreateBuildDirectory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-create-build-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -o /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+
+CreateBuildDirectory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-create-build-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug
+
+CreateBuildDirectory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-create-build-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/PackageFrameworks
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-create-build-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/PackageFrameworks
+
+CreateBuildDirectory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/PrecompiledHeaders
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-create-build-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/PrecompiledHeaders
+
+CreateBuildDirectory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-create-build-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-create-build-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/empty-SwiftJXLTests.plist (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/empty-SwiftJXLTests.plist
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/SwiftJXLTests.DependencyStaticMetadataFileList (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/SwiftJXLTests.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/SwiftJXLTests.DependencyMetadataFileList (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/SwiftJXLTests.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests_const_extract_protocols.json (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.SwiftFileList (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.SwiftFileList
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.SwiftConstValuesFileList (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.LinkFileList (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.LinkFileList
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests-OutputFileMap.json (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/SwiftJXL.modulemap (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/SwiftJXL.modulemap
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/SwiftJXL.DependencyStaticMetadataFileList (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/SwiftJXL.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/SwiftJXL.DependencyMetadataFileList (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/SwiftJXL.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL_const_extract_protocols.json (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.SwiftFileList (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.SwiftFileList
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.SwiftConstValuesFileList (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.LinkFileList (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.LinkFileList
+
+WriteAuxiliaryFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-OutputFileMap.json (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    write-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-OutputFileMap.json
+
+Copy /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/GeneratedModuleMaps/SwiftJXL.modulemap /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/SwiftJXL.modulemap (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/SwiftJXL.modulemap /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/GeneratedModuleMaps
+
+MkDir /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/MacOS (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    /bin/mkdir -p /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/MacOS
+
+MkDir /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    /bin/mkdir -p /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents
+
+MkDir /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    /bin/mkdir -p /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest
+
+SwiftDriver SwiftJXL normal arm64 com.apple.xcode.tools.swift.compiler (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name SwiftJXL -Onone @/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos26.0 -g -module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j18 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name swiftjxl -emit-const-values -const-gather-protocols-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL_const_extract_protocols.json -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/include -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/DerivedSources-normal/arm64 -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/DerivedSources/arm64 -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-Swift.h -working-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-443I289X492F3R4HKUW93PC6D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/ptrcheck-9YIJCMJHUHF5RIOZCQPN5QCDF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdbool-7RNVHQ6K7I7S15NFQQWK5N47S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/_AvailabilityInternal-EDV9TBMENS10HBZF3E6BNI5PA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stddef-76YG0WI9TMH02UUSUWNPNA1ZQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/ptrauth-B4FWLKYGO55SID0NZVB6CZKQB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/SwiftShims-6DL77V5YFFYRYPOAUKQFH4QMD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/_Builtin_float-4QPSSAXVRJFHJMLAO3XFHDDA1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdarg-4P99XHJY6A8N3VRRMHFWKDWRI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/_DarwinFoundation1-16W8QWU0745MITAJB2DJMO4ZH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/_DarwinFoundation2-B0VXR04UURKGO4G3RGKWTYHJ0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/_Builtin_limits-117LQ387NWBHTRODQY06WMXZH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/string_h-797W1TMKRU8NMZAWFYL24POO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/sys_types-72JC2HIASVJXCK9D08R48IQ75.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/_Builtin_stdint-9IRAIBM1QCNAPX2F3O3HYN31O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/libDER-7RZIRT8E6XL8ZGODIYNPB2QF1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/_DarwinFoundation3-27TOP48ZCQ3Y8EHR5CCKU4Q5P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/_Builtin_inttypes-C5V20UN7LUZC8MH4S3BKF42AZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/Darwin-21EW4SFOELPTGFQRIVGRY4WPX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/MachO-A5CS99GCRTBBSPXTCI2MM4GSY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/launch-CBHOL7VMHPKGHQ6F04JC3RTRK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/libkern-CNGPOEE8RGPM45Y3A1RWN0Z95.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/ObjectiveC-B4NRKOKP2GFCWWTZNM6EIE8AZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/os_object-8LPON96J1QW5FWA2QU2BET1G8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/os_workgroup-3BEUD62EP80BXIRAKGH6GVY4T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/Dispatch-6MDXE2UFGEDRD4VO7JRKX1HG6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/XPC-9TVUNSCOERF36WB6N158XXT3S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/CoreFoundation-DSTYKR5YMSQFLGITXI7DLEW6Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/IOKit-4RUM5W5YZ4Q72U7HACX3PHAJS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/CFNetwork-CCDQA92G6YTQ2TL6MZV0RMF0H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/Security-7U2201LI1LQQJCOWEEL31O9LV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/DiskArbitration-DFLFUI3RLULYXD6XVMK4IFXZO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/CoreServices-4Z9W5XNQ83MYEEZGI1WOI88U9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules/Foundation-30EJBQLC0L2QP7WIJXVHMXNLY.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ SwiftJXL (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    
+
+SwiftCompile normal arm64 Compiling\ Image.swift /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/Image.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/Image.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftPerFileCompile Image.swift
+
+SwiftCompile normal arm64 Compiling\ ImageStorage.swift /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/ImageStorage.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/ImageStorage.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftPerFileCompile ImageStorage.swift
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for SwiftJXL (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftDriver\ Compilation\ Requirements SwiftJXL normal arm64 com.apple.xcode.tools.swift.compiler (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name SwiftJXL -Onone @/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos26.0 -g -module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j18 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name swiftjxl -emit-const-values -const-gather-protocols-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL_const_extract_protocols.json -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/include -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/DerivedSources-normal/arm64 -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/DerivedSources/arm64 -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-Swift.h -working-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling ImageStorage.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 Compiling\ ImageDescriptor.swift /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/ImageDescriptor.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/ImageDescriptor.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftPerFileCompile ImageDescriptor.swift
+
+SwiftMergeGeneratedHeaders /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/GeneratedModuleMaps/SwiftJXL-Swift.h /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-Swift.h (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-swiftHeaderTool -arch arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-Swift.h -o /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/GeneratedModuleMaps/SwiftJXL-Swift.h
+
+SwiftDriverJobDiscovery normal arm64 Compiling Image.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+Copy /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXL.swiftmodule/arm64-apple-macos.swiftmodule /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.swiftmodule (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.swiftmodule /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXL.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXL.swiftmodule/arm64-apple-macos.swiftdoc /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.swiftdoc (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.swiftdoc /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXL.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXL.swiftmodule/arm64-apple-macos.abi.json /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.abi.json (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.abi.json /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXL.swiftmodule/arm64-apple-macos.abi.json
+
+Copy /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXL.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.swiftsourceinfo (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.swiftsourceinfo /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXL.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+SwiftCompile normal arm64 Compiling\ Transcoding.swift /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/Transcoding.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/Transcoding.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftPerFileCompile Transcoding.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling Transcoding.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 Compiling\ CodecAPI.swift /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/CodecAPI.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/CodecAPI.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftPerFileCompile CodecAPI.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling ImageDescriptor.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 Compiling\ Errors.swift /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/Errors.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/Errors.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftPerFileCompile Errors.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling Errors.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 Compiling\ Options.swift /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/Options.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Sources/SwiftJXL/Options.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftPerFileCompile Options.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling CodecAPI.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftDriver SwiftJXLTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name SwiftJXLTests -Onone @/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos26.0 -g -module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/PackageFrameworks -F /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j18 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name swiftjxl -emit-const-values -const-gather-protocols-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests_const_extract_protocols.json -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/include -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/DerivedSources-normal/arm64 -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/DerivedSources/arm64 -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -working-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling Options.swift (in target 'SwiftJXL' from project 'SwiftJXL')
+
+SwiftDriver\ Compilation SwiftJXL normal arm64 com.apple.xcode.tools.swift.compiler (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name SwiftJXL -Onone @/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos26.0 -g -module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j18 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name swiftjxl -emit-const-values -const-gather-protocols-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL_const_extract_protocols.json -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/include -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/DerivedSources-normal/arm64 -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/DerivedSources/arm64 -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL-Swift.h -working-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXL.o normal (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos26.0 -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -F/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -filelist /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL_lto.o -Xlinker -no_deduplicate -Xlinker -debug_variant -Xlinker -dependency_info -Xlinker /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.swiftmodule -o /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXL.o
+
+ExtractAppIntentsMetadata (in target 'SwiftJXL' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.2eg2cZ/Metal.xctoolchain --module-name SwiftJXL --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk --xcode-version 27A266a --platform-family macOS --deployment-target 26.0 --bundle-identifier swiftjxl.SwiftJXL --output /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXL.appintents --target-triple arm64-apple-macos26.0 --binary-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXL.o --dependency-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL_dependency_info.dat --stringsdata-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.SwiftFileList --metadata-file-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/SwiftJXL.DependencyMetadataFileList --static-metadata-file-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/SwiftJXL.DependencyStaticMetadataFileList --swift-const-vals-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXL-t.build/Objects-normal/arm64/SwiftJXL.SwiftConstValuesFileList --force --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-09-19 03:46:41.430 appintentsmetadataprocessor[13669:2776244] Starting appintentsmetadataprocessor export
+2026-09-19 03:46:41.470 appintentsmetadataprocessor[13669:2776244] Extracted no relevant App Intents symbols, skipping writing output
+
+ProcessInfoPlistFile /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/Info.plist /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/empty-SwiftJXLTests.plist (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-infoPlistUtility /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/empty-SwiftJXLTests.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -platform macosx -o /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/Info.plist
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/Testing-KI7M2D8L6Z5C.swiftmodule
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/_Testing_Foundation-3OMB9SV7MX7KS.swiftmodule
+
+SwiftCompile normal arm64 Compiling\ Swift64SampleAccessTests.swift /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Tests/SwiftJXLTests/Swift64SampleAccessTests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Tests/SwiftJXLTests/Swift64SampleAccessTests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftPerFileCompile Swift64SampleAccessTests.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ SwiftJXLTests (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    
+
+SwiftCompile normal arm64 Compiling\ CancellationPublicationTests.swift /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Tests/SwiftJXLTests/CancellationPublicationTests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Tests/SwiftJXLTests/CancellationPublicationTests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftPerFileCompile CancellationPublicationTests.swift
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for SwiftJXLTests (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+
+SwiftDriver\ Compilation\ Requirements SwiftJXLTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name SwiftJXLTests -Onone @/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos26.0 -g -module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/PackageFrameworks -F /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j18 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name swiftjxl -emit-const-values -const-gather-protocols-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests_const_extract_protocols.json -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/include -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/DerivedSources-normal/arm64 -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/DerivedSources/arm64 -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -working-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling CancellationPublicationTests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 Compiling\ StorageTests.swift /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Tests/SwiftJXLTests/StorageTests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Tests/SwiftJXLTests/StorageTests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftPerFileCompile StorageTests.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling Swift64SampleAccessTests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+
+Copy /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.swiftmodule/arm64-apple-macos.swiftmodule /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.swiftmodule (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.swiftmodule /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.swiftmodule/arm64-apple-macos.swiftdoc /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.swiftdoc (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.swiftdoc /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.swiftmodule/arm64-apple-macos.abi.json /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.abi.json (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.abi.json /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.swiftmodule/arm64-apple-macos.abi.json
+
+Copy /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.swiftsourceinfo (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.swiftsourceinfo /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+SwiftCompile normal arm64 Compiling\ DescriptorTests.swift /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Tests/SwiftJXLTests/DescriptorTests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Tests/SwiftJXLTests/DescriptorTests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftPerFileCompile DescriptorTests.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling DescriptorTests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 Compiling\ APITests.swift /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Tests/SwiftJXLTests/APITests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+
+SwiftCompile normal arm64 /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/Tests/SwiftJXLTests/APITests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-SwiftPerFileCompile APITests.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling StorageTests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+
+SwiftDriverJobDiscovery normal arm64 Compiling APITests.swift (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+
+SwiftDriver\ Compilation SwiftJXLTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name SwiftJXLTests -Onone @/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos26.0 -g -module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/PackageFrameworks -F /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j18 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name swiftjxl -emit-const-values -const-gather-protocols-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests_const_extract_protocols.json -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/include -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/DerivedSources-normal/arm64 -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/DerivedSources/arm64 -Xcc -I/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -working-directory /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL/.swiftpm/xcode -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/MacOS/SwiftJXLTests normal (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -Xlinker -reproducible -target arm64-apple-macos26.0 -Xlinker -bundle -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -Xlinker -no_warn_duplicate_libraries -L/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -L/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/PackageFrameworks -F/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug -Fsystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks @/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.LinkFileList -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/PackageFrameworks -Xlinker -rpath -Xlinker @loader_path/../../.. -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @loader_path/../Frameworks -Xlinker -object_path_lto -Xlinker /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests_lto.o -Xclang-linker -rdynamic -Xlinker -no_deduplicate -Xlinker -debug_variant -Xlinker -dependency_info -Xlinker /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests_dependency_info.dat -link-objc-runtime -profile-generate -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/MacOS/SwiftJXLTests
+
+ExtractAppIntentsMetadata (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.2eg2cZ/Metal.xctoolchain --module-name SwiftJXLTests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk --xcode-version 27A266a --platform-family macOS --deployment-target 26.0 --bundle-identifier swiftjxl.SwiftJXLTests --output /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/Resources --target-triple arm64-apple-macos26.0 --binary-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/MacOS/SwiftJXLTests --dependency-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests_dependency_info.dat --stringsdata-file /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.SwiftFileList --metadata-file-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/SwiftJXLTests.DependencyMetadataFileList --static-metadata-file-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/SwiftJXLTests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/Objects-normal/arm64/SwiftJXLTests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-09-19 03:46:43.156 appintentsmetadataprocessor[13732:2776480] Starting appintentsmetadataprocessor export
+2026-09-19 03:46:43.157 appintentsmetadataprocessor[13732:2776480] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+CopySwiftLibs /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/MacOS/SwiftJXLTests --scan-folder /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/Frameworks --scan-folder /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/PlugIns --scan-folder /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/Library/SystemExtensions --scan-folder /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/Extensions --platform macosx --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.2eg2cZ/Metal.xctoolchain --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest/Contents/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftJXL.build/Debug/SwiftJXLTests-p.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+RegisterExecutionPolicyException /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    builtin-RegisterExecutionPolicyException /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest
+
+Touch /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest (in target 'SwiftJXLTests-product' from project 'SwiftJXL')
+    cd /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/outputs/SwiftJXL
+    /usr/bin/touch -c /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Products/Debug/SwiftJXLTests.xctest
+
+PruneExplicitPrecompiledModules /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+2026-09-19 03:46:43.211 xcodebuild[13498:2775360]  DVTAssertions: Warning in IDEFrameworks/IDEFoundation/Execution/LaunchSystem/IDELaunchSession.m:395
+Details:  setRunnablePIDWithDiagnostics:logSection:andCompletionHandler: called without a completion handler - blocking until diagnostics setup completes. Callers should migrate to using a completion handler for better performance.
+Object:   <IDELaunchSession: 0x7b89398300>
+Method:   -setRunnablePIDWithDiagnostics:logSection:andCompletionHandler:
+Thread:   <NSThread: 0x7b89124c40>{number = 7, name = (null)}
+Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
+Test Suite 'All tests' started at 2026-09-19 03:46:44.257.
+Test Suite 'All tests' passed at 2026-09-19 03:46:44.257.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+􀟈 Test run started.
+􀄵 Testing Library Version: 2084
+􀄵 Target Platform: arm64e-apple-macos14.0
+􀟈 Suite "Public API feasibility" started.
+􀟈 Test capabilitiesDoNotAdvertiseSyntheticSamplesAsJPEGXL() started.
+􁁛 Test capabilitiesDoNotAdvertiseSyntheticSamplesAsJPEGXL() passed after 0.001 seconds.
+􀟈 Test validatesConfigurationAndFiniteResourceLimits() started.
+􁁛 Test validatesConfigurationAndFiniteResourceLimits() passed after 0.001 seconds.
+􀟈 Test admissionBoundariesAndMetadataAreChecked() started.
+􁁛 Test admissionBoundariesAndMetadataAreChecked() passed after 0.001 seconds.
+􀟈 Test safeWriterRejectsOutOfRangeSamplesAndInvalidatesDestination() started.
+􁁛 Test safeWriterRejectsOutOfRangeSamplesAndInvalidatesDestination() passed after 0.001 seconds.
+􀟈 Test allCodecCallShapesRejectWithoutTouchingDestination() started.
+􁁛 Test allCodecCallShapesRejectWithoutTouchingDestination() passed after 0.001 seconds.
+􀟈 Test rejectsInputLimitRequiredBackendAndDestructiveMetadataPolicy() started.
+􁁛 Test rejectsInputLimitRequiredBackendAndDestructiveMetadataPolicy() passed after 0.001 seconds.
+􀟈 Test cancellationRetainsItsStandardErrorAndInvalidatesPartialWrite() started.
+􁁛 Test cancellationRetainsItsStandardErrorAndInvalidatesPartialWrite() passed after 0.001 seconds.
+􀟈 Test reportUnknownMeasurementsRemainUnknown() started.
+􁁛 Test reportUnknownMeasurementsRemainUnknown() passed after 0.001 seconds.
+􀟈 Test metadataSharesTheCallerAdmissionBudgetWithPixels() started.
+􁁛 Test metadataSharesTheCallerAdmissionBudgetWithPixels() passed after 0.001 seconds.
+􁁛 Suite "Public API feasibility" passed after 0.002 seconds.
+􀟈 Test cancellationInProviderFinalisationPreventsPublication(_:) started.
+􀟈 Test case passing 1 argument point → .sealing to cancellationInProviderFinalisationPreventsPublication(_:) started.
+​􀟈 Test case passing 1 argument point → .validatingSealedStorage to cancellationInProviderFinalisationPreventsPublication(_:) started.
+​􁁛 Test cancellationInProviderFinalisationPreventsPublication(_:) with 2 test cases passed after 0.003 seconds.
+􀟈 Suite "Descriptor validation" started.
+􀟈 Test paddedOddDimensionsAndPrecision() started.
+􁁛 Test paddedOddDimensionsAndPrecision() passed after 0.001 seconds.
+􀟈 Test finalRowNeedsOnlyItsActualSampleBytes() started.
+􁁛 Test finalRowNeedsOnlyItsActualSampleBytes() passed after 0.001 seconds.
+􀟈 Test rejectsInvalidGeometryAndPrecision() started.
+􁁛 Test rejectsInvalidGeometryAndPrecision() passed after 0.001 seconds.
+􀟈 Test rejectsArithmeticOverflowBeforeAllocation() started.
+􁁛 Test rejectsArithmeticOverflowBeforeAllocation() passed after 0.001 seconds.
+􀟈 Test rejectsMisalignedOffsetsAndStrides() started.
+􁁛 Test rejectsMisalignedOffsetsAndStrides() passed after 0.001 seconds.
+􀟈 Test rejectsOverlappingPlanesAndIncompleteMapping() started.
+􁁛 Test rejectsOverlappingPlanesAndIncompleteMapping() passed after 0.001 seconds.
+􀟈 Test semanticMetadataMustAgreeWithComponents() started.
+􁁛 Test semanticMetadataMustAgreeWithComponents() passed after 0.001 seconds.
+􀟈 Test deterministicLayoutMutation() started.
+􁁛 Test deterministicLayoutMutation() passed after 0.001 seconds.
+􁁛 Suite "Descriptor validation" passed after 0.002 seconds.
+􀟈 Suite "Owning storage" started.
+􀟈 Test leaseCannotBeForgedReusedOrBorrowedReentrantly() started.
+􁁛 Test leaseCannotBeForgedReusedOrBorrowedReentrantly() passed after 0.001 seconds.
+􀟈 Test abortMakesStorageUnreadableAndUnwritable() started.
+􁁛 Test abortMakesStorageUnreadableAndUnwritable() passed after 0.001 seconds.
+􀟈 Test freshAllocationsHaveDistinctIdentitiesAndZeroPadding() started.
+􁁛 Test freshAllocationsHaveDistinctIdentitiesAndZeroPadding() passed after 0.001 seconds.
+􀟈 Test imageRetainsAdapterAndAllocationUntilLastReader() started.
+􁁛 Test imageRetainsAdapterAndAllocationUntilLastReader() passed after 0.001 seconds.
+􀟈 Test rejectsOwnerCapacityShorterThanDescriptor() started.
+􁁛 Test rejectsOwnerCapacityShorterThanDescriptor() passed after 0.001 seconds.
+􀟈 Test concurrentReadersPreserveEveryLogicalSample() started.
+􁁛 Test concurrentReadersPreserveEveryLogicalSample() passed after 0.001 seconds.
+􀟈 Test copiedLeaseCannotOverlapWriters() started.
+􁁛 Test copiedLeaseCannotOverlapWriters() passed after 0.001 seconds.
+􁁛 Suite "Owning storage" passed after 0.003 seconds.
+􀟈 Suite "Swift 6.4 sample access" started.
+􀟈 Test readsIndependentGoldenBytesFromOddPhysicalAddress() started.
+􁁛 Test readsIndependentGoldenBytesFromOddPhysicalAddress() passed after 0.001 seconds.
+􀟈 Test writesGoldenBytesForPackedAndPadded12And16BitSamples() started.
+􁁛 Test writesGoldenBytesForPackedAndPadded12And16BitSamples() passed after 0.001 seconds.
+􀟈 Test initialisesExternalSampleBytesAtOddAddressWithoutChangingPadding() started.
+􁁛 Test initialisesExternalSampleBytesAtOddAddressWithoutChangingPadding() passed after 0.001 seconds.
+􀟈 Test refusesShortProviderBeforeLoadingSample() started.
+􁁛 Test refusesShortProviderBeforeLoadingSample() passed after 0.001 seconds.
+􀟈 Test rejectsCoordinatesBeforeOffsetArithmetic() started.
+􁁛 Test rejectsCoordinatesBeforeOffsetArithmetic() passed after 0.001 seconds.
+􀟈 Test outOfPrecisionWriteInvalidatesDestination() started.
+􁁛 Test outOfPrecisionWriteInvalidatesDestination() passed after 0.001 seconds.
+􁁛 Suite "Swift 6.4 sample access" passed after 0.002 seconds.
+􁁛 Test run with 31 tests in 4 suites passed after 0.014 seconds.
+2026-09-19 03:46:44.541 xcodebuild[13498:2775317] [MT] IDETestOperationsObserverDebug: 1.358 elapsed -- Testing started completed.
+2026-09-19 03:46:44.541 xcodebuild[13498:2775317] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-09-19 03:46:44.541 xcodebuild[13498:2775317] [MT] IDETestOperationsObserverDebug: 1.358 sec, +1.358 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/suresh/Documents/Codex/2026-09-18/create-coding-agents-to-start-work/work/swift64/xcode/SwiftJXL/Tests.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

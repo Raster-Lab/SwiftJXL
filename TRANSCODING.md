@@ -1,6 +1,6 @@
 # SwiftJXL — reversible JPEG ↔ JPEG XL transcoding
 
-Native-transcoding requirements introduced in contract **0.2.0**; the current common contract is **0.2.1**. Implementation instructions and source review, 18 September 2026. Milestone 1 supplies an unsupported transcoder call shape with empty capabilities; real recompression and reconstruction remain deferred. Read AGENTS.md, IMPLEMENTATION.md and the common contracts first. For application API/dependency changes and rollout gates, see [MIGRATION.md](MIGRATION.md).
+Native-transcoding requirements introduced in contract **0.2.0**; the current common contract is **0.4.0**. Implementation instructions and source review, 18 September 2026. Milestone 1 supplies an unsupported transcoder call shape with empty capabilities; real recompression and reconstruction remain deferred. Read AGENTS.md, IMPLEMENTATION.md and the common contracts first. For application API/dependency changes and rollout gates, see [MIGRATION.md](MIGRATION.md).
 
 ## Required outcome and exact meaning
 
@@ -40,7 +40,7 @@ Use a safe output-size bound and checked counts/offsets throughout JPEG parsing,
 
 ## Harmonised API and CLI
 
-Expose the same native format-pair call shape as SwiftJ2K: local `Transcoder(configuration:)`, `transcode(_:to:options:) async throws` returning `EncodedImage`, and `capabilities`. Local `TranscodeTarget` cases are `jpegXL` and `jpeg`. JPEG → `jpegXL` selects reversible coefficient recompression; reconstruction-bearing JXL → `jpeg` selects autonomous original-byte restoration. The result identifies its actual output format and original-bitstream preservation contract. Use the common option names, resource/error/copy reporting and Swift 6.2 concurrency rules.
+Expose the same native format-pair call shape as SwiftJ2K: local `Transcoder(configuration:)`, `transcode(_:to:options:) async throws` returning `EncodedImage`, and `capabilities`. Local `TranscodeTarget` cases are `jpegXL` and `jpeg`. JPEG → `jpegXL` selects reversible coefficient recompression; reconstruction-bearing JXL → `jpeg` selects autonomous original-byte restoration. The result identifies its actual output format and original-bitstream preservation contract. Use the common option names, resource/error/copy reporting and Swift 6.4 concurrency rules.
 
 The predecessor's forward/reverse public entry points may remain explicit convenience wrappers if useful, but must delegate to the same qualified implementation and policies. Do not introduce a second divergent lifecycle or lossless meaning. The ordinary Image encode/decode API remains the route for pixel compression. No quality/distance setting or pixel-fallback default is permitted in the reversible operation.
 

@@ -1,0 +1,5 @@
+# Fresh URL consumption at the OS 27 baseline
+
+A new standalone macOS 27 / Swift 6.4 consumer fetched `https://github.com/Raster-Lab/SwiftJXL.git` at `2df336334377b8c5b24450044724640716d29c00` and executed the exact Swift fence in MIGRATION.md. The Swift Build command exited **0**. Package.resolved contains exactly one dependency pinned to that commit; no sibling checkout or local override is used. The downloaded library, CLI, tests, manifests, scripts, version and manual hashes match FINAL_INPUTS.json and are repeated in result.json. This verifies the remote library package remains independently consumable despite the new executable product.
+
+The subsequent commit records evidence/documentation only. This is storage/API consumer proof, not codec compression. The runner is a historical copy with original workspace/pin-record assumptions; the exact argv, manifest, resolved dependency and source hashes are the portable audit inputs. Build/download caches and executables are excluded. SHA256SUMS.txt protects all retained text files.

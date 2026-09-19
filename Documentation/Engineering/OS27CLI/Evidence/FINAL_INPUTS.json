@@ -1,0 +1,32 @@
+{
+  "final_hashes": {
+    "Package.swift": "8231a6c2536b64b8459d49ff820bec3a1836cf293ed8444bf33b53010b6aacb0",
+    "VERSION": "6e23ce0a8e66351a24a82283c2dcfb1c64f35b1c19b1f6bcdc3952d436802193",
+    "Sources/SwiftJXLCLI/main.swift": "03d5605a1b3762e2fb7ff16b4a6a5cb5d79230e2aeebca3aae98cb865bf7f60b",
+    "Sources/SwiftJXL/Options.swift": "082a589b2172282b6a66ea3bd6e72f6d865671a782cb1b3839549db3e575f622",
+    "Sources/SwiftJXL/ImageDescriptor.swift": "a6d91691d00c0bee8f19986f7bd95739589794898e3c163e80923885d21c5a96",
+    "Sources/SwiftJXL/ImageStorage.swift": "8bc26a7d1237260dbb607fe2612f55d05a9376365371573332190e78308095cd",
+    "Sources/SwiftJXL/CodecAPI.swift": "f2744a85794dc40f46e9062e01bed9484ea4eca14ae729bbe870e589839b0e91",
+    "Sources/SwiftJXL/Transcoding.swift": "c033c2fd033ac78b23d357e632be71812ab28a994928445e7f67de5b9f1a0995",
+    "Sources/SwiftJXL/Image.swift": "4dfb7a32d89f03a9679b1b5f9071af5a6176f335e96faf400fba2b7a0c9debf7",
+    "Sources/SwiftJXL/Errors.swift": "cfae3357b4aba0e62df1ed6096b8af951d39d0155184b8881c737d48ec936643",
+    "Tests/SwiftJXLTests/StorageTests.swift": "03e66b1a86f31fa158bf64cc3a8ed2fd3b4039278a741ad45841f27fc119fb11",
+    "Tests/SwiftJXLTests/CancellationPublicationTests.swift": "516de2615da1d5a390948fe60332b226e15489794a913ad31fe685050ec0cc25",
+    "Tests/SwiftJXLTests/Swift64SampleAccessTests.swift": "af232193a006a48c2db915c2ee938bbac6108a1ce5ced69217b5f5e8398c044e",
+    "Tests/SwiftJXLTests/APITests.swift": "1d8c8c543d55e1c1c87b4b9158d61b5580f54c2752cb40be89ea9b40f0fd9efa",
+    "Tests/SwiftJXLTests/DescriptorTests.swift": "d0a812f417a55acd771964f9a41c0d0f81d95c5a23d69db386d76bc558088e47",
+    "Scripts/validate.sh": "5fde61d2ab79718a455979ffd6909cdbc9592445c09a02f1fce45a7c316a0365",
+    "Scripts/validate-swift64.py": "cf9f9a0ef5f529206e37a99819d020014d2327aaa168d8a9e9f695099e087dbf",
+    "Scripts/test-cli.py": "1bd6ae8f0ef5b0464356ec83a9d68bc9ed8092659196ad2f5a3475bf4d8a0ff7",
+    "Scripts/README.md": "04241727241c5e39c460ba9ce92e6fc8cb8592cd53931aacd372ba6f7416fa1f",
+    "Scripts/install-cli.sh": "ce15bad18e9b95fadb17721cbd88eed30fb25c452d034db9c9b3987ac6cc6ce5",
+    "ManPages/swiftjxl.1": "34cc8c5ebf15a56032500de7299fb5d693058dc395622b7d733e6ef298693e0b"
+  },
+  "core_source_and_tests_unchanged_since_full_validation": true,
+  "later_changes": [
+    "Scripts/install-cli.sh",
+    "Scripts/test-cli.py"
+  ],
+  "later_change_reason": "Installer now refuses stale source manual; final CLI regressions re-executed and script hashes recorded. No library/CLI Swift source changed.",
+  "cli_process_checks": 109
+}

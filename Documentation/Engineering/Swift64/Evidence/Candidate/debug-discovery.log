@@ -1,0 +1,42 @@
+Building for debugging...
+[Planning deferred tasks]
+[15 / 26] SwiftJXLTests-product
+[16 / 35]
+[20 / 35] SwiftJXLTests-product
+[21 / 35] SwiftJXLTests-product
+[23 / 35] SwiftJXLTests-product
+[29 / 35] SwiftJXLTests-product
+[31 / 35] SwiftJXLTests-product
+[35 / 35] SwiftJXLTests-product
+Build complete! (3.03 secs)
+SwiftJXLTests.APITests/admissionBoundariesAndMetadataAreChecked()
+SwiftJXLTests.APITests/allCodecCallShapesRejectWithoutTouchingDestination()
+SwiftJXLTests.APITests/cancellationRetainsItsStandardErrorAndInvalidatesPartialWrite()
+SwiftJXLTests.APITests/capabilitiesDoNotAdvertiseSyntheticSamplesAsJPEGXL()
+SwiftJXLTests.APITests/metadataSharesTheCallerAdmissionBudgetWithPixels()
+SwiftJXLTests.APITests/rejectsInputLimitRequiredBackendAndDestructiveMetadataPolicy()
+SwiftJXLTests.APITests/reportUnknownMeasurementsRemainUnknown()
+SwiftJXLTests.APITests/safeWriterRejectsOutOfRangeSamplesAndInvalidatesDestination()
+SwiftJXLTests.APITests/validatesConfigurationAndFiniteResourceLimits()
+SwiftJXLTests.DescriptorTests/deterministicLayoutMutation()
+SwiftJXLTests.DescriptorTests/finalRowNeedsOnlyItsActualSampleBytes()
+SwiftJXLTests.DescriptorTests/paddedOddDimensionsAndPrecision()
+SwiftJXLTests.DescriptorTests/rejectsArithmeticOverflowBeforeAllocation()
+SwiftJXLTests.DescriptorTests/rejectsInvalidGeometryAndPrecision()
+SwiftJXLTests.DescriptorTests/rejectsMisalignedOffsetsAndStrides()
+SwiftJXLTests.DescriptorTests/rejectsOverlappingPlanesAndIncompleteMapping()
+SwiftJXLTests.DescriptorTests/semanticMetadataMustAgreeWithComponents()
+SwiftJXLTests.StorageTests/abortMakesStorageUnreadableAndUnwritable()
+SwiftJXLTests.StorageTests/concurrentReadersPreserveEveryLogicalSample()
+SwiftJXLTests.StorageTests/copiedLeaseCannotOverlapWriters()
+SwiftJXLTests.StorageTests/freshAllocationsHaveDistinctIdentitiesAndZeroPadding()
+SwiftJXLTests.StorageTests/imageRetainsAdapterAndAllocationUntilLastReader()
+SwiftJXLTests.StorageTests/leaseCannotBeForgedReusedOrBorrowedReentrantly()
+SwiftJXLTests.StorageTests/rejectsOwnerCapacityShorterThanDescriptor()
+SwiftJXLTests.Swift64SampleAccessTests/initialisesExternalSampleBytesAtOddAddressWithoutChangingPadding()
+SwiftJXLTests.Swift64SampleAccessTests/outOfPrecisionWriteInvalidatesDestination()
+SwiftJXLTests.Swift64SampleAccessTests/readsIndependentGoldenBytesFromOddPhysicalAddress()
+SwiftJXLTests.Swift64SampleAccessTests/refusesShortProviderBeforeLoadingSample()
+SwiftJXLTests.Swift64SampleAccessTests/rejectsCoordinatesBeforeOffsetArithmetic()
+SwiftJXLTests.Swift64SampleAccessTests/writesGoldenBytesForPackedAndPadded12And16BitSamples()
+SwiftJXLTests.cancellationInProviderFinalisationPreventsPublication(_:)
