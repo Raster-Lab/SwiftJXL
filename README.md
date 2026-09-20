@@ -8,7 +8,7 @@ SwiftJXL is the standalone successor to [JXLSwift](https://github.com/Raster-Lab
 
 ## Swift 6.4 development candidate
 
-Current development version: **2.1.0-dev.2** ([VERSION](VERSION)); shared contract **0.6.0**. This increments the earlier unreleased 2.0.0 target and creates no release/tag. See the [current qualification record](Documentation/Engineering/OS27CLI/README.md) for adopted features, exact Xcode/Swift Build evidence and open platform gates. The historical [Milestone 1 evidence](Documentation/MILESTONE1.md) remains unchanged.
+Current development version: **2.1.0-dev.2** ([VERSION](VERSION)); shared contract **0.7.0**. This increments the earlier unreleased 2.0.0 target and creates no release/tag. See the [current qualification record](Documentation/Engineering/OS27CLI/README.md) for adopted features, exact Xcode/Swift Build evidence and open platform gates. The historical [Milestone 1 evidence](Documentation/MILESTONE1.md) remains unchanged.
 
 ## Intended platform baseline
 
