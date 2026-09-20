@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="TestResults" errors="0" tests="31" failures="0" skipped="0" time="0.003770292">
+    <testcase classname="SwiftJXLTests.DescriptorTests" name="semanticMetadataMustAgreeWithComponents()" time="0.001001916" />
+    <testcase classname="SwiftJXLTests.DescriptorTests" name="rejectsInvalidGeometryAndPrecision()" time="0.001086292" />
+    <testcase classname="SwiftJXLTests.DescriptorTests" name="rejectsMisalignedOffsetsAndStrides()" time="0.001004625" />
+    <testcase classname="SwiftJXLTests.DescriptorTests" name="finalRowNeedsOnlyItsActualSampleBytes()" time="0.001092167" />
+    <testcase classname="SwiftJXLTests.DescriptorTests" name="rejectsArithmeticOverflowBeforeAllocation()" time="0.001106834" />
+    <testcase classname="SwiftJXLTests.DescriptorTests" name="deterministicLayoutMutation()" time="0.002768875" />
+    <testcase classname="SwiftJXLTests.DescriptorTests" name="rejectsOverlappingPlanesAndIncompleteMapping()" time="0.001084" />
+    <testcase classname="SwiftJXLTests.DescriptorTests" name="paddedOddDimensionsAndPrecision()" time="0.001172625" />
+    <testcase classname="SwiftJXLTests.Swift64SampleAccessTests" name="readsIndependentGoldenBytesFromOddPhysicalAddress()" time="0.001511292" />
+    <testcase classname="SwiftJXLTests.Swift64SampleAccessTests" name="rejectsCoordinatesBeforeOffsetArithmetic()" time="0.001208208" />
+    <testcase classname="SwiftJXLTests.Swift64SampleAccessTests" name="outOfPrecisionWriteInvalidatesDestination()" time="0.001286417" />
+    <testcase classname="SwiftJXLTests.Swift64SampleAccessTests" name="writesGoldenBytesForPackedAndPadded12And16BitSamples()" time="0.001949542" />
+    <testcase classname="SwiftJXLTests.Swift64SampleAccessTests" name="refusesShortProviderBeforeLoadingSample()" time="0.00141125" />
+    <testcase classname="SwiftJXLTests.Swift64SampleAccessTests" name="initialisesExternalSampleBytesAtOddAddressWithoutChangingPadding()" time="0.001499458" />
+    <testcase classname="SwiftJXLTests.APITests" name="safeWriterRejectsOutOfRangeSamplesAndInvalidatesDestination()" time="0.001171958" />
+    <testcase classname="SwiftJXLTests.APITests" name="validatesConfigurationAndFiniteResourceLimits()" time="0.001066416" />
+    <testcase classname="SwiftJXLTests.APITests" name="allCodecCallShapesRejectWithoutTouchingDestination()" time="0.001266958" />
+    <testcase classname="SwiftJXLTests.APITests" name="rejectsInputLimitRequiredBackendAndDestructiveMetadataPolicy()" time="0.001140208" />
+    <testcase classname="SwiftJXLTests.APITests" name="cancellationRetainsItsStandardErrorAndInvalidatesPartialWrite()" time="0.001365791" />
+    <testcase classname="SwiftJXLTests.APITests" name="capabilitiesDoNotAdvertiseSyntheticSamplesAsJPEGXL()" time="0.001274625" />
+    <testcase classname="SwiftJXLTests.APITests" name="reportUnknownMeasurementsRemainUnknown()" time="0.001117" />
+    <testcase classname="SwiftJXLTests.APITests" name="metadataSharesTheCallerAdmissionBudgetWithPixels()" time="0.001451875" />
+    <testcase classname="SwiftJXLTests.APITests" name="admissionBoundariesAndMetadataAreChecked()" time="0.001439583" />
+    <testcase classname="SwiftJXLTests" name="cancellationInProviderFinalisationPreventsPublication(_:)" time="0.002615125" />
+    <testcase classname="SwiftJXLTests.StorageTests" name="leaseCannotBeForgedReusedOrBorrowedReentrantly()" time="0.001382625" />
+    <testcase classname="SwiftJXLTests.StorageTests" name="rejectsOwnerCapacityShorterThanDescriptor()" time="0.001262708" />
+    <testcase classname="SwiftJXLTests.StorageTests" name="freshAllocationsHaveDistinctIdentitiesAndZeroPadding()" time="0.00121025" />
+    <testcase classname="SwiftJXLTests.StorageTests" name="imageRetainsAdapterAndAllocationUntilLastReader()" time="0.001317125" />
+    <testcase classname="SwiftJXLTests.StorageTests" name="copiedLeaseCannotOverlapWriters()" time="0.00259975" />
+    <testcase classname="SwiftJXLTests.StorageTests" name="abortMakesStorageUnreadableAndUnwritable()" time="0.001336375" />
+    <testcase classname="SwiftJXLTests.StorageTests" name="concurrentReadersPreserveEveryLogicalSample()" time="0.001561208" />
+  </testsuite>
+</testsuites>

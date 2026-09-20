@@ -1,0 +1,30 @@
+Fetching https://github.com/Raster-Lab/SwiftJXL.git
+[1/756] Fetching swiftjxl
+Fetched https://github.com/Raster-Lab/SwiftJXL.git (1.64s)
+Creating working copy for https://github.com/Raster-Lab/SwiftJXL.git
+Working copy of https://github.com/Raster-Lab/SwiftJXL.git resolved at 2df336334377b8c5b24450044724640716d29c00
+Building for debugging...
+[Planning deferred tasks]
+[23 / 38]
+[24 / 39] SwiftJXL
+[31 / 81]
+[36 / 81]
+[41 / 81]
+[42 / 81]
+[43 / 81]
+[47 / 81]
+[49 / 81]
+[52 / 81]
+[55 / 81]
+[56 / 81]
+[57 / 81]
+[58 / 81]
+[61 / 81] SwiftJXL
+[69 / 81] SwiftJXL
+[71 / 81] SwiftJXL-product
+[75 / 82]
+[77 / 82] MigrationExample-product
+[80 / 84] MigrationExample-product
+[82 / 84] MigrationExample-product
+Build complete! (6.56 secs)
+Migration preparation passed; codec operations remain unavailable.
