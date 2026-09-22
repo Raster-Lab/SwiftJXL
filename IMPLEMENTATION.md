@@ -48,6 +48,29 @@ Build on the validated local common surface and portable memory access to implem
 
 Implement reversible existing-JPEG ↔ JPEG XL using [TRANSCODING.md](TRANSCODING.md) and the common native format-pair API/CLI. Audit the recorded predecessor limitations in Milestone 2; qualify the in-memory native operation in Milestone 3 and extend profiles in Milestone 4. Preserve the initial J2K → JPEG-LS proof and the Milestone 1 feasibility boundary.
 
+## Product dispositions (POL-05)
+
+Decided 22 September 2026 under contract 0.8.0 §3, which requires this inventory before any subsystem is relocated. Measured at predecessor JXLSwift `57e81cb` with `swift package dump-package`. "Imports" counts files across DICOMKit, CompressionFamily, VoxeliaValidation, DICOMAdapter, RasterOneImage, OneImageViewer-iOS and telerad-dicom-viewer containing a top-level `import <module>`.
+
+POL-05 requires every product to be explicitly **retained** (migrates, stays a public product), **adapted** (migrates with a changed shape — folded into the principal module, renamed, or re-expressed through the common API) or **deferred** (does not migrate for the first stable; stays with the predecessor through the maintenance window). Deferred is not deleted.
+
+| Predecessor product | Files / lines | Imports | Disposition | Successor | Basis |
+| --- | --- | --- | --- | --- | --- |
+| `JXLSwift` | 122 / 45,117 | 1 | Adapted — renamed | `SwiftJXL` | API-01 |
+| `JXLSwiftContract` | 7 / 1,059 | 0 | Adapted — folded in | `SwiftJXL` | The module rename dissolves the name collision that justified a separate product. Contract 0.8.0 §5 forbids two parallel surfaces in one module. |
+| `jxl-tool` (exec) | 13 / 2,983 | — | Adapted — renamed | `swiftjxl` | CLI-01 |
+| `jxl` (exec) | same target | — | Deferred — dropped | none | A second binary built from the same target for family parity with `j2k`. CLI-01 replaces that scheme with `swiftj2k`/`swiftjls`/`swiftjxl`/`swiftjli` and avoids names that could replace a predecessor binary. |
+
+**Product list after migration:** `SwiftJXL` (library) and `swiftjxl` (executable).
+
+### Decisions recorded with these dispositions
+
+**X1 — reversible JPEG recompression migrates inside `SwiftJXL` with its own gate.** POL-09 requires this repository to preserve and qualify the predecessor's reversible existing-JPEG ↔ JPEG XL capability, restoring the original JPEG bytes from the JXL alone. The implementation lives inside the `JXLSwift` target and moves with it, but it does not inherit the predecessor's qualification. It gets a named Milestone 4 gate: byte-exact reconstruction over a pinned corpus, with the corpus revision and commands recorded. It is not a separate product.
+
+**X2 — Linux support is not claimed at 2.1.0.** The predecessor is Apple-only by manifest and by design. Migrating its source does not make it build or run on Linux, and POL-08 forbids publishing support as verified when its gate has not executed. The common contract's Linux requirement is unchanged and not weakened; the claim is simply not made until the gate passes. Linux ARM64 and x86_64 qualification is a named milestone after the first stable, and README and capability text must not imply it beforehand.
+
+**CLI surface.** Retained and adapted: the CLI-01 verbs `encode`, `decode`, `inspect` (renamed from `Info`), `validate` and `capabilities`, plus `transcode` under POL-09. Deferred to a CLI milestone after the first stable: `Batch`, `BatchEncode`, `BatchDecode`, `Benchmark`, `Compare`, `Convert` and `Completions`. `Version` is absorbed by `--version`.
+
 ## Required handover
 
 Update CHANGELOG.md and migration provenance. Provide the exact commands, commits, fixture hashes and outcomes; report tests not run and why, unsupported cases, allocation/copy evidence and performance impact. Map each advertised feature to a test and capability entry. Keep DICOMKit/Voxelia source changes outside this repository task unless the owner separately assigns them.
